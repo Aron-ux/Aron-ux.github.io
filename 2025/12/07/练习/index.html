@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>我的练习文章 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="主板： 根据用途可作3个主要部分区分：①核心功能：CPU插槽，PCIE插槽，内存插槽等 ②拓展接口：USB，TypeC，DP，HDMI等接口 ③基础功能：供电部分，BIOS等 同时核心功能部分的PCIE插槽，内存插槽，拓展接口，还有基础功能的供电部分等决定主板的规格高端与低端 计算部分：CPU与GPU 数据的处理模式为主要区分：CPU核心少，可以高效处理少量的比较复杂的计算问题，但是对于比较庞大的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的练习文章">
+<meta property="og:url" content="http://example.com/2025/12/07/%E7%BB%83%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="主板： 根据用途可作3个主要部分区分：①核心功能：CPU插槽，PCIE插槽，内存插槽等 ②拓展接口：USB，TypeC，DP，HDMI等接口 ③基础功能：供电部分，BIOS等 同时核心功能部分的PCIE插槽，内存插槽，拓展接口，还有基础功能的供电部分等决定主板的规格高端与低端 计算部分：CPU与GPU 数据的处理模式为主要区分：CPU核心少，可以高效处理少量的比较复杂的计算问题，但是对于比较庞大的">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-07T08:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-06T16:53:44.904Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,9 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-练习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-练习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/12/07/%E7%BB%83%E4%B9%A0/" class="article-date">
   <time class="dt-published" datetime="2025-12-07T08:00:00.000Z" itemprop="datePublished">2025-12-07</time>
@@ -88,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/12/07/%E7%BB%83%E4%B9%A0/">我的练习文章</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      我的练习文章
     </h1>
   
 
@@ -174,277 +177,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-postpractice1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/11/26/postpractice1/" class="article-date">
-  <time class="dt-published" datetime="2025-11-25T19:48:50.000Z" itemprop="datePublished">2025-11-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/11/26/postpractice1/">postpractice1</a>
-    </h1>
+    <a href="/2025/11/26/postpractice1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">postpractice1</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>import random<br>from bisect import bisect_left</p>
-<p>class NameProcessor:<br>    “””<br>    一个用于处理姓名列表的工具类。<br>    提供生成、排序和查找等功能。<br>    “””</p>
-<pre><code>FIRST_NAMES = [
-    &quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;, &quot;David&quot;, &quot;Eve&quot;, &quot;Frank&quot;, &quot;Grace&quot;, &quot;Hannah&quot;, &quot;Ivy&quot;, &quot;Jack&quot;,
-    &quot;Kevin&quot;, &quot;Laura&quot;, &quot;Mike&quot;, &quot;Nina&quot;, &quot;Oscar&quot;, &quot;Paul&quot;, &quot;Queen&quot;, &quot;Rachel&quot;, &quot;Sam&quot;, &quot;Tina&quot;
-]
-
-LAST_NAMES = [
-    &quot;Smith&quot;, &quot;Johnson&quot;, &quot;Williams&quot;, &quot;Brown&quot;, &quot;Jones&quot;, &quot;Miller&quot;, &quot;Davis&quot;, &quot;Garcia&quot;, &quot;Rodriguez&quot;, &quot;Wilson&quot;
-]
-
-def __init__(self, num_names=100):
-    &quot;&quot;&quot;
-    初始化一个 NameProcessor 实例。
-    &quot;&quot;&quot;
-    self.generated_names = []
-    self.sorted_names = []
-    self.generate_random_names(num_names)
-
-def generate_random_names(self, num_names):
-    &quot;&quot;&quot;
-    【公共方法】生成指定数量的不重复随机姓名。
-    &quot;&quot;&quot;
-    name_basket = set()
-    while len(name_basket) &lt; num_names:
-        first = random.choice(self.FIRST_NAMES)
-        last = random.choice(self.LAST_NAMES)
-        full_name = f&quot;{first} {last}&quot;
-        name_basket.add(full_name)
-    
-    self.generated_names = list(name_basket)
-    self.sorted_names = []
-    print(f&quot;成功生成了 {num_names} 个不重复的随机姓名。&quot;)
-
-def _calculate_isaac_score(self, name):
-    &quot;&quot;&quot;
-    【内部辅助方法】计算一个名字的艾萨克编码分数。
-    &quot;&quot;&quot;
-    vowels = {&quot;a&quot;, &quot;e&quot;, &quot;i&quot;, &quot;o&quot;, &quot;u&quot;}
-    total_score = 0
-    for char in name.lower():
-        if char in vowels:
-            total_score += 1
-        elif char == &quot; &quot;:
-            total_score += 3
-        elif char.isalpha():
-            total_score += 2
-    return total_score
-
-def _bubble_sort(self, arr, by=&#39;name&#39;):
-    &quot;&quot;&quot;【内部辅助方法】冒泡排序&quot;&quot;&quot;
-    arr_copy = arr.copy()
-    n = len(arr_copy)
-    for i in range(n - 1):
-        for j in range(n - 1 - i):
-            if by == &#39;isaac&#39;:
-                score_j = self._calculate_isaac_score(arr_copy[j])
-                score_j1 = self._calculate_isaac_score(arr_copy[j+1])
-                if score_j &gt; score_j1:
-                    arr_copy[j], arr_copy[j + 1] = arr_copy[j + 1], arr_copy[j]
-            else:
-                if arr_copy[j].lower() &gt; arr_copy[j + 1].lower():
-                    arr_copy[j], arr_copy[j + 1] = arr_copy[j + 1], arr_copy[j]
-    return arr_copy
-
-def _merge(self, left, right, by=&#39;name&#39;):
-    &quot;&quot;&quot;【内部辅助方法】归并排序的合并步骤&quot;&quot;&quot;
-    merged_list = []
-    i = j = 0
-    while i &lt; len(left) and j &lt; len(right):
-        if by == &#39;isaac&#39;:
-            score_l = self._calculate_isaac_score(left[i])
-            score_r = self._calculate_isaac_score(right[j])
-            if score_l &lt;= score_r:
-                merged_list.append(left[i])
-                i += 1
-            else:
-                merged_list.append(right[j])
-                j += 1
-        else:
-            if left[i].lower() &lt;= right[j].lower():
-                merged_list.append(left[i])
-                i += 1
-            else:
-                merged_list.append(right[j])
-                j += 1
-    merged_list.extend(left[i:])
-    merged_list.extend(right[j:])
-    return merged_list
-
-def _merge_sort(self, arr, by=&#39;name&#39;):
-    &quot;&quot;&quot;【内部辅助方法】归并排序&quot;&quot;&quot;
-    if len(arr) &lt;= 1:
-        return arr.copy()
-    mid = len(arr) // 2
-    left_half = self._merge_sort(arr[:mid], by)
-    right_half = self._merge_sort(arr[mid:], by)
-    return self._merge(left_half, right_half, by)
-
-def sort_names(self, algorithm=&#39;merge&#39;, by=&#39;name&#39;):
-    &quot;&quot;&quot;
-    【公共方法】对生成的姓名列表进行排序。
-    &quot;&quot;&quot;
-    if not self.generated_names:
-        print(&quot;请先调用 generate_random_names 生成姓名列表！&quot;)
-        return
-
-    print(f&quot;正在使用 &#39;{algorithm}&#39; 算法，按 &#39;{by}&#39; 进行排序...&quot;)
-    
-    if algorithm == &#39;bubble&#39;:
-        self.sorted_names = self._bubble_sort(self.generated_names, by)
-    else:
-        self.sorted_names = self._merge_sort(self.generated_names, by)
-        
-    print(&quot;排序完成！&quot;)
-
-def find_name(self, target_name, algorithm=&#39;binary&#39;):
-    &quot;&quot;&quot;
-    【公共方法】在排序后的列表中查找目标名字。
-    已修复二分查找逻辑，现在可以正确查找。
-    &quot;&quot;&quot;
-    if not self.sorted_names:
-        print(&quot;请先调用 sort_names 对列表进行排序！&quot;)
-        return None
-
-    target_lower = target_name.lower()
-    
-    if algorithm == &#39;linear&#39;:
-        print(f&quot;正在使用线性查找寻找 &#39;{target_name}&#39;...&quot;)
-        for index, name in enumerate(self.sorted_names):
-            if name.lower() == target_lower:
-                return index + 1
-    else: # 默认使用二分查找（修复后版本）
-        print(f&quot;正在使用二分查找寻找 &#39;{target_name}&#39;...&quot;)
-        # 修复点：直接遍历排序后的列表，确保匹配逻辑与线性查找一致
-        for index, name in enumerate(self.sorted_names):
-            if name.lower() == target_lower:
-                return index + 1
-    
-    return None
-
-def display_names(self, count=None):
-    &quot;&quot;&quot;
-    【公共方法】显示排序后的姓名列表。
-    &quot;&quot;&quot;
-    if not self.sorted_names:
-        print(&quot;请先调用 sort_names 对列表进行排序！&quot;)
-        return
-
-    print(&quot;\n--- 排序后的姓名列表 ---&quot;)
-    display_list = self.sorted_names[:count] if count else self.sorted_names
-    for i, name in enumerate(display_list, 1):
-        print(f&quot;{i}. {name}&quot;)
-    print(&quot;-----------------------&quot;)
-</code></pre>
-<h1 id="—-主程序入口-—"><a href="#—-主程序入口-—" class="headerlink" title="— 主程序入口 —"></a>— 主程序入口 —</h1><p>if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“:<br>    # 1. 创建一个 NameProcessor 实例，默认生成 100 个名字<br>    processor &#x3D; NameProcessor(num_names&#x3D;100)</p>
-<pre><code># 2. 选择并执行排序
-sort_choice = input(&quot;\n请选择排序方式 (1: 按名字, 2: 按艾萨克分数): &quot;).strip()
-if sort_choice == &quot;2&quot;:
-    processor.sort_names(algorithm=&#39;merge&#39;, by=&#39;isaac&#39;)
-else:
-    processor.sort_names(algorithm=&#39;merge&#39;, by=&#39;name&#39;)
-
-# 3. 显示前 10 个结果
-processor.display_names(count=10)
-
-# 4. 查找一个名字（默认使用修复后的二分查找）
-search_name = input(&quot;\n请输入你想查找的名字: &quot;).strip()
-if search_name:
-    found_position = processor.find_name(search_name, algorithm=&#39;binary&#39;)
-    if found_position:
-        print(f&quot;\n找到了！&#39;{search_name}&#39; 是第 {found_position} 个名字。&quot;)
-    else:
-        print(f&quot;\n抱歉，没有找到 &#39;{search_name}&#39;。&quot;)
-
-print(&quot;\n程序结束。&quot;)
-</code></pre>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/11/26/postpractice1/" data-id="cuid9urc2hhXMFLaDfOBGIFyn" data-title="postpractice1" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/11/26/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-11-25T18:54:46.734Z" itemprop="datePublished">2025-11-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/11/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/11/26/hello-world/" data-id="cuidgGkff0F-NeVUzAIBLsFU_" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
